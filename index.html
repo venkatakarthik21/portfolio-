@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkata Karthik | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-flex">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <div class="hero-text">
+        <h1>Pampana Venkata Karthik</h1>
+        <p class="subtitle">Electronics & Communication Engineering Student</p>
+        <p class="contact">
+          <a href="mailto:karthikvenkata552@gmail.com">karthikvenkata552@gmail.com</a> |
+          <a href="tel:+919182752144">+91 9182752144</a> |
+          <a href="https://linkedin.com/in/pampana-venkata-karthik-428646251" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#languages">Languages</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="profile" class="card">
+      <h2>Profile</h2>
+      <p>Enthusiastic and detail-oriented ECE student with a passion for problem-solving and crafting efficient Python-based applications. Experienced in creating impactful projects and committed to continuous learning.</p>
+    </section>
+
+    <section id="project" class="card">
+      <h2>Project</h2>
+      <h3>Blood Test Billing App</h3>
+      <ul>
+        <li>Developed a billing app using Python & Streamlit</li>
+        <li>Utilized Pandas for dynamic data management</li>
+        <li>Implemented PDF invoice generation</li>
+        <li>Enhanced operational efficiency in medical labs</li>
+      </ul>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech (ECE)</strong> – Aditya College of Engineering & Technology (CGPA: 7.20, May 2025)</li>
+        <li><strong>Intermediate</strong> – Sri Chaitanya Junior College, 73.2%</li>
+        <li><strong>SSC</strong> – Satyam E.M High School, CGPA: 9.5</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <h3>Python Intern – Technical Hub</h3>
+      <ul>
+        <li>Created mini projects with Tkinter, CSV, PyPDF2</li>
+        <li>Improved code maintainability via refactoring</li>
+      </ul>
+      <h3>Embedded Systems Trainee – SkillDzire</h3>
+      <ul>
+        <li>Designed embedded projects with Proteus & Arduino</li>
+        <li>Gained practical knowledge in microcontroller systems</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span>Python</span>
+        <span>C Programming</span>
+        <span>MySQL</span>
+        <span>MS Word</span>
+        <span>Excel</span>
+        <span>PowerPoint</span>
+        <span>Problem Solving</span>
+        <span>Time Management</span>
+        <span>Typing</span>
+        <span>Leadership</span>
+      </div>
+    </section>
+
+    <section id="certificates" class="card">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Python Internship – Technical Hub</li>
+        <li>IT Specialist Certificate – Python</li>
+        <li>AWS Academy Cloud Foundations</li>
+        <li>Smart Sign Board Bootcamp</li>
+      </ul>
+    </section>
+
+    <section id="languages" class="card">
+      <h2>Languages</h2>
+      <p>Fluent in Telugu, Hindi, and English</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Pampana Venkata Karthik. Crafted with passion.</p>
+  </footer>
+</body>
+</html>
